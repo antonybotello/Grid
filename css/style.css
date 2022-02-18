@@ -1,0 +1,128 @@
+body *{
+    font-family: 'Lato', sans-serif;
+}
+
+.grid-1{
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 200px 80px;
+    gap: 20px ;
+
+    grid-template-areas: "header header header"
+                         "main   main   sidebar"
+                         "footer footer footer";
+}
+.item-1{
+    background-color: coral;
+    grid-area: header;
+}
+.item-2{
+    background-color:cornflowerblue;
+    grid-area: main;
+}
+.item-3{
+    background-color: darkseagreen;
+    grid-area: sidebar;
+}
+.item-4{
+    background-color: mediumpurple;
+    grid-area: footer;
+}
+
+.tachado{
+    text-decoration:line-through;
+    color: gray;
+}
+.flex-1{
+    display: flex;
+    background-color: #023E8A;
+    padding: 3%;
+    gap:20px;
+    width: 80%;
+    margin: 5% auto;
+    flex-wrap: wrap;
+    justify-content: left;
+    border-radius: 0 50px 0 50px;
+}
+.grid-2:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+.grid-2{
+    background-color: #ADE8F4;
+    display: grid;
+    padding: 30px;
+    width: 100%;
+    max-width: 18%;
+    margin: 0 auto;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 50% repeat(12%,4);
+    gap: 5px ;
+    border-radius: 30px;
+    box-shadow: 14px 14px 22px -7px rgba(0,0,0,0.66);
+    grid-template-areas: "foto foto"
+                         "titulo titulo"
+                         "precio descuento"
+                         "descripcion descripcion"
+                         "vacio fecha";
+}
+.centrado{
+    line-height: 50px;
+    text-align: center;
+}
+.foto{
+    object-fit: cover;
+    width: 100%;
+}
+.item-1f{
+    background-color: coral;
+    grid-area: foto;
+}
+.item-2f{
+    
+    grid-area: titulo;
+}
+.item-3f{
+    font-weight: 600;
+    grid-area: precio;
+    
+}
+.item-4f{
+   color: red;
+    grid-area: descuento;
+}
+.item-5f{
+    
+    grid-area: descripcion;
+}
+.item-6f{
+    
+    grid-area: fecha;
+    
+    
+}
+.myButton {
+    font-weight: 700;
+	box-shadow: 0px 0px 0px 0px #023E8A;
+	background-color:#0077B6;
+	border-radius:28px;
+	border:1px solid #023E8A;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#00B4D8;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
